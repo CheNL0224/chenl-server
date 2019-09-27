@@ -1,0 +1,458 @@
+2019-09-27 12:23:27.296 [main] INFO  com.social.chenl.Application - Starting Application on DESKTOP-TQPPDCS with PID 11064 (D:\myProject\chenl-server-master\target\classes started by Lance in D:\myProject\chenl-server-master)
+2019-09-27 12:23:27.299 [main] INFO  com.social.chenl.Application - No active profile set, falling back to default profiles: default
+2019-09-27 12:23:27.357 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 12:23:27 CST 2019]; root of context hierarchy
+2019-09-27 12:23:27.514 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2019-09-27 12:23:28.467 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3a137f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-27 12:23:28.856 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2019-09-27 12:23:28.865 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2019-09-27 12:23:28.866 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-09-27 12:23:28.937 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-27 12:23:28.937 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1580 ms
+2019-09-27 12:23:29.542 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-27 12:23:29.543 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-27 12:23:29.543 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-27 12:23:29.543 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-27 12:23:29.543 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'apiSecurityFilter' to urls: [/chenl/user/*, /chenl/feed/*, /chenl/rss/*, /chenl/future/*]
+2019-09-27 12:23:29.543 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/chenl/*]
+2019-09-27 12:23:30.147 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/version/latest],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.AppVersionController.latestVersion()
+2019-09-27 12:23:30.149 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/action/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedActionController.saveFeedAction(com.social.chenl.vo.FeedActionVO,java.lang.String)
+2019-09-27 12:23:30.149 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/action/remove],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedActionController.removeFeedAction(com.social.chenl.vo.FeedActionVO,java.lang.String)
+2019-09-27 12:23:30.150 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/page],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.pageFeedEvaluate(com.social.chenl.vo.FeedCommentVO)
+2019-09-27 12:23:30.150 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/unread],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.unreadReply(java.lang.String)
+2019-09-27 12:23:30.151 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.saveFeedComment(com.social.chenl.vo.FeedCommentSaveVO,java.lang.String)
+2019-09-27 12:23:30.151 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/unread/update],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.updateUnreadReply(java.lang.String)
+2019-09-27 12:23:30.152 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/page],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageFeed(com.social.chenl.vo.FeedSearchVO,java.lang.String)
+2019-09-27 12:23:30.152 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.saveFeed(com.social.chenl.vo.FeedSaveVO,java.lang.String)
+2019-09-27 12:23:30.153 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/relevant],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageRelevant(com.social.chenl.vo.RelevantVO,java.lang.String)
+2019-09-27 12:23:30.153 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/view],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.viewFeed(com.social.chenl.vo.IdVO)
+2019-09-27 12:23:30.153 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/mine/reply],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageMineReply(com.social.chenl.vo.RelevantVO,java.lang.String)
+2019-09-27 12:23:30.153 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/future/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FutureController.saveFuture(com.social.chenl.vo.FutureSaveVO,java.lang.String)
+2019-09-27 12:23:30.153 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/inc/direct/api],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.social.chenl.controller.ResourceGatheringController.directApi(com.social.chenl.vo.IncVO)
+2019-09-27 12:23:30.153 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/inc/parse/api],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.social.chenl.controller.ResourceGatheringController.parseApi(com.social.chenl.vo.IncVO)
+2019-09-27 12:23:30.155 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error500()
+2019-09-27 12:23:30.155 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/400]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error400()
+2019-09-27 12:23:30.155 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error404()
+2019-09-27 12:23:30.157 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rss/upload/user/image],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RssController.uploadHotelContract(org.springframework.web.multipart.MultipartFile[])
+2019-09-27 12:23:30.157 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rss/upload/feed/image],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RssController.uploadFeedbackImage(org.springframework.web.multipart.MultipartFile[])
+2019-09-27 12:23:30.158 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.register(com.social.chenl.vo.RegisterVO)
+2019-09-27 12:23:30.159 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/search],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.searchUser(com.social.chenl.vo.UserSearchVO)
+2019-09-27 12:23:30.159 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.login(com.social.chenl.vo.LoginVO)
+2019-09-27 12:23:30.159 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.updateUser(com.social.chenl.vo.UserUpdateVO,java.lang.String)
+2019-09-27 12:23:30.159 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/reset],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.resetPassword(com.social.chenl.vo.RegisterVO)
+2019-09-27 12:23:30.159 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/info],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.getUser(com.social.chenl.vo.IdVO,java.lang.String)
+2019-09-27 12:23:30.160 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/rc/list],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.listRcUser()
+2019-09-27 12:23:30.160 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-27 12:23:30.163 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-27 12:23:30.163 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-27 12:23:30.164 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-27 12:23:30.166 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-27 12:23:30.166 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-27 12:23:30.338 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 12:23:27 CST 2019]; root of context hierarchy
+2019-09-27 12:23:30.392 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/web/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:23:30.392 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/js/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:23:30.392 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:23:30.392 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:23:30.392 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:23:30.410 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2019-09-27 12:23:30.433 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:23:30.453 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [web/index.html]
+2019-09-27 12:23:30.938 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-09-27 12:23:30.947 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-09-27 12:23:30.948 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-09-27 12:23:30.965 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-09-27 12:23:30.977 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-09-27 12:23:31.300 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2019-09-27 12:23:31.309 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8090]
+2019-09-27 12:23:31.319 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-09-27 12:23:31.332 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+2019-09-27 12:23:31.336 [main] INFO  com.social.chenl.Application - Started Application in 4.518 seconds (JVM running for 5.324)
+2019-09-27 12:30:44.527 [main] INFO  com.social.chenl.Application - Starting Application on DESKTOP-TQPPDCS with PID 27084 (D:\myProject\chenl-server-master\target\classes started by Lance in D:\myProject\chenl-server-master)
+2019-09-27 12:30:44.530 [main] INFO  com.social.chenl.Application - No active profile set, falling back to default profiles: default
+2019-09-27 12:30:44.586 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 12:30:44 CST 2019]; root of context hierarchy
+2019-09-27 12:30:44.711 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2019-09-27 12:30:45.639 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f19dbcd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-27 12:30:45.868 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2019-09-27 12:30:45.876 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2019-09-27 12:30:45.876 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-09-27 12:30:45.941 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-27 12:30:45.941 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1355 ms
+2019-09-27 12:30:46.564 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-27 12:30:46.565 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-27 12:30:46.565 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-27 12:30:46.565 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-27 12:30:46.565 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'apiSecurityFilter' to urls: [/chenl/user/*, /chenl/feed/*, /chenl/rss/*, /chenl/future/*]
+2019-09-27 12:30:46.565 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/chenl/*]
+2019-09-27 12:30:47.331 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/version/latest],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.AppVersionController.latestVersion()
+2019-09-27 12:30:47.334 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/action/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedActionController.saveFeedAction(com.social.chenl.vo.FeedActionVO,java.lang.String)
+2019-09-27 12:30:47.335 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/action/remove],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedActionController.removeFeedAction(com.social.chenl.vo.FeedActionVO,java.lang.String)
+2019-09-27 12:30:47.336 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/unread/update],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.updateUnreadReply(java.lang.String)
+2019-09-27 12:30:47.337 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.saveFeedComment(com.social.chenl.vo.FeedCommentSaveVO,java.lang.String)
+2019-09-27 12:30:47.337 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/page],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.pageFeedEvaluate(com.social.chenl.vo.FeedCommentVO)
+2019-09-27 12:30:47.337 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/unread],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.unreadReply(java.lang.String)
+2019-09-27 12:30:47.340 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/page],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageFeed(com.social.chenl.vo.FeedSearchVO,java.lang.String)
+2019-09-27 12:30:47.340 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/mine/reply],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageMineReply(com.social.chenl.vo.RelevantVO,java.lang.String)
+2019-09-27 12:30:47.341 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/relevant],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageRelevant(com.social.chenl.vo.RelevantVO,java.lang.String)
+2019-09-27 12:30:47.341 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/view],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.viewFeed(com.social.chenl.vo.IdVO)
+2019-09-27 12:30:47.341 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.saveFeed(com.social.chenl.vo.FeedSaveVO,java.lang.String)
+2019-09-27 12:30:47.342 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/future/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FutureController.saveFuture(com.social.chenl.vo.FutureSaveVO,java.lang.String)
+2019-09-27 12:30:47.343 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/inc/direct/api],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.social.chenl.controller.ResourceGatheringController.directApi(com.social.chenl.vo.IncVO)
+2019-09-27 12:30:47.343 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/inc/parse/api],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.social.chenl.controller.ResourceGatheringController.parseApi(com.social.chenl.vo.IncVO)
+2019-09-27 12:30:47.347 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/400]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error400()
+2019-09-27 12:30:47.347 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error500()
+2019-09-27 12:30:47.347 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error404()
+2019-09-27 12:30:47.350 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rss/upload/feed/image],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RssController.uploadFeedbackImage(org.springframework.web.multipart.MultipartFile[])
+2019-09-27 12:30:47.351 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rss/upload/user/image],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RssController.uploadHotelContract(org.springframework.web.multipart.MultipartFile[])
+2019-09-27 12:30:47.352 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.register(com.social.chenl.vo.RegisterVO)
+2019-09-27 12:30:47.353 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.login(com.social.chenl.vo.LoginVO)
+2019-09-27 12:30:47.353 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/search],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.searchUser(com.social.chenl.vo.UserSearchVO)
+2019-09-27 12:30:47.353 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.updateUser(com.social.chenl.vo.UserUpdateVO,java.lang.String)
+2019-09-27 12:30:47.353 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/info],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.getUser(com.social.chenl.vo.IdVO,java.lang.String)
+2019-09-27 12:30:47.353 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/rc/list],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.listRcUser()
+2019-09-27 12:30:47.354 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/reset],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.resetPassword(com.social.chenl.vo.RegisterVO)
+2019-09-27 12:30:47.354 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-27 12:30:47.358 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-27 12:30:47.358 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-27 12:30:47.359 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-27 12:30:47.361 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-27 12:30:47.362 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-27 12:30:47.570 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 12:30:44 CST 2019]; root of context hierarchy
+2019-09-27 12:30:47.625 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/web/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:30:47.625 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/js/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:30:47.625 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:30:47.625 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:30:47.625 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:30:47.643 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2019-09-27 12:30:47.664 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:30:47.683 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [web/index.html]
+2019-09-27 12:30:48.183 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-09-27 12:30:48.191 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-09-27 12:30:48.191 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-09-27 12:30:48.208 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-09-27 12:30:48.218 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-09-27 12:30:48.566 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2019-09-27 12:30:48.575 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8090]
+2019-09-27 12:30:48.585 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-09-27 12:30:48.598 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+2019-09-27 12:30:48.604 [main] INFO  com.social.chenl.Application - Started Application in 4.593 seconds (JVM running for 5.407)
+2019-09-27 12:37:56.449 [main] INFO  com.social.chenl.Application - Starting Application on DESKTOP-TQPPDCS with PID 27232 (D:\myProject\chenl-server-master\target\classes started by Lance in D:\myProject\chenl-server-master)
+2019-09-27 12:37:56.451 [main] INFO  com.social.chenl.Application - No active profile set, falling back to default profiles: default
+2019-09-27 12:37:56.497 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 12:37:56 CST 2019]; root of context hierarchy
+2019-09-27 12:37:56.619 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2019-09-27 12:37:57.529 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1a0b12f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-27 12:37:57.769 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2019-09-27 12:37:57.779 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2019-09-27 12:37:57.780 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-09-27 12:37:57.845 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-27 12:37:57.845 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1349 ms
+2019-09-27 12:37:58.433 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-27 12:37:58.434 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-27 12:37:58.435 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-27 12:37:58.435 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-27 12:37:58.435 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'apiSecurityFilter' to urls: [/chenl/user/*, /chenl/feed/*, /chenl/rss/*, /chenl/future/*]
+2019-09-27 12:37:58.435 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/chenl/*]
+2019-09-27 12:37:59.143 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/version/latest],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.AppVersionController.latestVersion()
+2019-09-27 12:37:59.145 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/action/remove],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedActionController.removeFeedAction(com.social.chenl.vo.FeedActionVO,java.lang.String)
+2019-09-27 12:37:59.145 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/action/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedActionController.saveFeedAction(com.social.chenl.vo.FeedActionVO,java.lang.String)
+2019-09-27 12:37:59.146 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/page],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.pageFeedEvaluate(com.social.chenl.vo.FeedCommentVO)
+2019-09-27 12:37:59.147 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/unread],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.unreadReply(java.lang.String)
+2019-09-27 12:37:59.147 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.saveFeedComment(com.social.chenl.vo.FeedCommentSaveVO,java.lang.String)
+2019-09-27 12:37:59.147 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/unread/update],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.updateUnreadReply(java.lang.String)
+2019-09-27 12:37:59.149 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/view],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.viewFeed(com.social.chenl.vo.IdVO)
+2019-09-27 12:37:59.149 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/page],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageFeed(com.social.chenl.vo.FeedSearchVO,java.lang.String)
+2019-09-27 12:37:59.149 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.saveFeed(com.social.chenl.vo.FeedSaveVO,java.lang.String)
+2019-09-27 12:37:59.150 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/mine/reply],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageMineReply(com.social.chenl.vo.RelevantVO,java.lang.String)
+2019-09-27 12:37:59.150 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/relevant],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageRelevant(com.social.chenl.vo.RelevantVO,java.lang.String)
+2019-09-27 12:37:59.150 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/future/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FutureController.saveFuture(com.social.chenl.vo.FutureSaveVO,java.lang.String)
+2019-09-27 12:37:59.151 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/inc/direct/api],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.social.chenl.controller.ResourceGatheringController.directApi(com.social.chenl.vo.IncVO)
+2019-09-27 12:37:59.151 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/inc/parse/api],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.social.chenl.controller.ResourceGatheringController.parseApi(com.social.chenl.vo.IncVO)
+2019-09-27 12:37:59.153 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error404()
+2019-09-27 12:37:59.153 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error500()
+2019-09-27 12:37:59.153 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/400]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error400()
+2019-09-27 12:37:59.155 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rss/upload/user/image],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RssController.uploadHotelContract(org.springframework.web.multipart.MultipartFile[])
+2019-09-27 12:37:59.156 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rss/upload/feed/image],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RssController.uploadFeedbackImage(org.springframework.web.multipart.MultipartFile[])
+2019-09-27 12:37:59.158 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.register(com.social.chenl.vo.RegisterVO)
+2019-09-27 12:37:59.158 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.login(com.social.chenl.vo.LoginVO)
+2019-09-27 12:37:59.158 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.updateUser(com.social.chenl.vo.UserUpdateVO,java.lang.String)
+2019-09-27 12:37:59.158 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/reset],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.resetPassword(com.social.chenl.vo.RegisterVO)
+2019-09-27 12:37:59.158 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/search],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.searchUser(com.social.chenl.vo.UserSearchVO)
+2019-09-27 12:37:59.159 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/rc/list],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.listRcUser()
+2019-09-27 12:37:59.159 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/info],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.getUser(com.social.chenl.vo.IdVO,java.lang.String)
+2019-09-27 12:37:59.159 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-27 12:37:59.162 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-27 12:37:59.162 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-27 12:37:59.163 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-27 12:37:59.166 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-27 12:37:59.166 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-27 12:37:59.341 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 12:37:56 CST 2019]; root of context hierarchy
+2019-09-27 12:37:59.398 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/web/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:37:59.398 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/js/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:37:59.398 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:37:59.398 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:37:59.398 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:37:59.416 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2019-09-27 12:37:59.439 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:37:59.474 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [web/index.html]
+2019-09-27 12:37:59.952 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-09-27 12:37:59.961 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-09-27 12:37:59.962 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-09-27 12:37:59.981 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-09-27 12:37:59.994 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-09-27 12:38:00.318 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2019-09-27 12:38:00.326 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8090]
+2019-09-27 12:38:00.330 [main] ERROR o.a.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler [http-nio-8090]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at com.social.chenl.Application.main(Application.java:22)
+2019-09-27 12:38:00.331 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8090]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8090]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at com.social.chenl.Application.main(Application.java:22)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 11 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	... 12 common frames omitted
+2019-09-27 12:38:00.342 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+2019-09-27 12:38:00.342 [main] INFO  o.a.catalina.core.StandardService - Stopping service Tomcat
+2019-09-27 12:38:00.351 [localhost-startStop-1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2019-09-27 12:38:00.354 [main] INFO  o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-09-27 12:38:00.354 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+2019-09-27 12:38:00.354 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+2019-09-27 12:38:00.357 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-09-27 12:38:00.361 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8090 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8090, or configure this application to listen on another port.
+
+2019-09-27 12:38:00.361 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 12:37:56 CST 2019]; root of context hierarchy
+2019-09-27 12:38:00.363 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-09-27 12:38:00.364 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-09-27 12:38:30.926 [main] INFO  com.social.chenl.Application - Starting Application on DESKTOP-TQPPDCS with PID 5636 (D:\myProject\chenl-server-master\target\classes started by Lance in D:\myProject\chenl-server-master)
+2019-09-27 12:38:30.928 [main] INFO  com.social.chenl.Application - No active profile set, falling back to default profiles: default
+2019-09-27 12:38:30.970 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 12:38:30 CST 2019]; root of context hierarchy
+2019-09-27 12:38:31.098 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2019-09-27 12:38:31.973 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f19dbcd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-27 12:38:32.203 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2019-09-27 12:38:32.211 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2019-09-27 12:38:32.212 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-09-27 12:38:32.276 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-27 12:38:32.277 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1307 ms
+2019-09-27 12:38:32.870 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-27 12:38:32.870 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-27 12:38:32.871 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-27 12:38:32.871 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-27 12:38:32.871 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'apiSecurityFilter' to urls: [/chenl/user/*, /chenl/feed/*, /chenl/rss/*, /chenl/future/*]
+2019-09-27 12:38:32.871 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/chenl/*]
+2019-09-27 12:38:33.445 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/version/latest],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.AppVersionController.latestVersion()
+2019-09-27 12:38:33.447 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/action/remove],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedActionController.removeFeedAction(com.social.chenl.vo.FeedActionVO,java.lang.String)
+2019-09-27 12:38:33.447 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/action/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedActionController.saveFeedAction(com.social.chenl.vo.FeedActionVO,java.lang.String)
+2019-09-27 12:38:33.448 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/unread/update],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.updateUnreadReply(java.lang.String)
+2019-09-27 12:38:33.448 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/unread],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.unreadReply(java.lang.String)
+2019-09-27 12:38:33.449 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.saveFeedComment(com.social.chenl.vo.FeedCommentSaveVO,java.lang.String)
+2019-09-27 12:38:33.449 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/page],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.pageFeedEvaluate(com.social.chenl.vo.FeedCommentVO)
+2019-09-27 12:38:33.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.saveFeed(com.social.chenl.vo.FeedSaveVO,java.lang.String)
+2019-09-27 12:38:33.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/page],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageFeed(com.social.chenl.vo.FeedSearchVO,java.lang.String)
+2019-09-27 12:38:33.451 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/relevant],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageRelevant(com.social.chenl.vo.RelevantVO,java.lang.String)
+2019-09-27 12:38:33.451 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/view],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.viewFeed(com.social.chenl.vo.IdVO)
+2019-09-27 12:38:33.451 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/mine/reply],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageMineReply(com.social.chenl.vo.RelevantVO,java.lang.String)
+2019-09-27 12:38:33.451 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/future/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FutureController.saveFuture(com.social.chenl.vo.FutureSaveVO,java.lang.String)
+2019-09-27 12:38:33.452 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/inc/direct/api],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.social.chenl.controller.ResourceGatheringController.directApi(com.social.chenl.vo.IncVO)
+2019-09-27 12:38:33.452 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/inc/parse/api],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.social.chenl.controller.ResourceGatheringController.parseApi(com.social.chenl.vo.IncVO)
+2019-09-27 12:38:33.453 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/400]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error400()
+2019-09-27 12:38:33.453 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error500()
+2019-09-27 12:38:33.453 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error404()
+2019-09-27 12:38:33.455 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rss/upload/user/image],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RssController.uploadHotelContract(org.springframework.web.multipart.MultipartFile[])
+2019-09-27 12:38:33.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rss/upload/feed/image],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RssController.uploadFeedbackImage(org.springframework.web.multipart.MultipartFile[])
+2019-09-27 12:38:33.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.register(com.social.chenl.vo.RegisterVO)
+2019-09-27 12:38:33.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.login(com.social.chenl.vo.LoginVO)
+2019-09-27 12:38:33.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.updateUser(com.social.chenl.vo.UserUpdateVO,java.lang.String)
+2019-09-27 12:38:33.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/search],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.searchUser(com.social.chenl.vo.UserSearchVO)
+2019-09-27 12:38:33.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/info],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.getUser(com.social.chenl.vo.IdVO,java.lang.String)
+2019-09-27 12:38:33.457 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/rc/list],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.listRcUser()
+2019-09-27 12:38:33.458 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/reset],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.resetPassword(com.social.chenl.vo.RegisterVO)
+2019-09-27 12:38:33.458 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-27 12:38:33.461 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-27 12:38:33.461 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-27 12:38:33.462 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-27 12:38:33.464 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-27 12:38:33.465 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-27 12:38:33.633 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 12:38:30 CST 2019]; root of context hierarchy
+2019-09-27 12:38:33.687 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/web/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:38:33.687 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/js/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:38:33.687 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:38:33.687 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:38:33.687 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:38:33.706 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2019-09-27 12:38:33.730 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 12:38:33.750 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [web/index.html]
+2019-09-27 12:38:34.224 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-09-27 12:38:34.231 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-09-27 12:38:34.231 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-09-27 12:38:34.246 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-09-27 12:38:34.259 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-09-27 12:38:34.580 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2019-09-27 12:38:34.588 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8090]
+2019-09-27 12:38:34.598 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-09-27 12:38:34.610 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+2019-09-27 12:38:34.615 [main] INFO  com.social.chenl.Application - Started Application in 4.118 seconds (JVM running for 4.884)
+2019-09-27 13:41:28.386 [main] INFO  com.social.chenl.Application - Starting Application on DESKTOP-TQPPDCS with PID 18064 (D:\myProject\chenl-server-master\target\classes started by Lance in D:\myProject\chenl-server-master)
+2019-09-27 13:41:28.389 [main] INFO  com.social.chenl.Application - No active profile set, falling back to default profiles: default
+2019-09-27 13:41:28.433 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 13:41:28 CST 2019]; root of context hierarchy
+2019-09-27 13:41:28.572 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2019-09-27 13:41:29.470 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$160ec59a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-27 13:41:29.728 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2019-09-27 13:41:29.736 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2019-09-27 13:41:29.736 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-09-27 13:41:29.800 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-27 13:41:29.800 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1368 ms
+2019-09-27 13:41:30.445 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-27 13:41:30.446 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-27 13:41:30.446 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-27 13:41:30.446 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-27 13:41:30.446 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'apiSecurityFilter' to urls: [/chenl/user/*, /chenl/feed/*, /chenl/rss/*, /chenl/future/*]
+2019-09-27 13:41:30.446 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/chenl/*]
+2019-09-27 13:41:31.051 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/app/version/latest],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.AppVersionController.latestVersion()
+2019-09-27 13:41:31.053 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/action/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedActionController.saveFeedAction(com.social.chenl.vo.FeedActionVO,java.lang.String)
+2019-09-27 13:41:31.054 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/action/remove],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedActionController.removeFeedAction(com.social.chenl.vo.FeedActionVO,java.lang.String)
+2019-09-27 13:41:31.055 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/unread/update],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.updateUnreadReply(java.lang.String)
+2019-09-27 13:41:31.055 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/page],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.pageFeedEvaluate(com.social.chenl.vo.FeedCommentVO)
+2019-09-27 13:41:31.056 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.saveFeedComment(com.social.chenl.vo.FeedCommentSaveVO,java.lang.String)
+2019-09-27 13:41:31.056 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/comment/unread],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedCommentController.unreadReply(java.lang.String)
+2019-09-27 13:41:31.057 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/page],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageFeed(com.social.chenl.vo.FeedSearchVO,java.lang.String)
+2019-09-27 13:41:31.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.saveFeed(com.social.chenl.vo.FeedSaveVO,java.lang.String)
+2019-09-27 13:41:31.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/mine/reply],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageMineReply(com.social.chenl.vo.RelevantVO,java.lang.String)
+2019-09-27 13:41:31.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/relevant],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.pageRelevant(com.social.chenl.vo.RelevantVO,java.lang.String)
+2019-09-27 13:41:31.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/feed/view],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FeedController.viewFeed(com.social.chenl.vo.IdVO)
+2019-09-27 13:41:31.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/future/save],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.FutureController.saveFuture(com.social.chenl.vo.FutureSaveVO,java.lang.String)
+2019-09-27 13:41:31.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/inc/direct/api],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.social.chenl.controller.ResourceGatheringController.directApi(com.social.chenl.vo.IncVO)
+2019-09-27 13:41:31.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/inc/parse/api],methods=[GET]}" onto public com.alibaba.fastjson.JSONObject com.social.chenl.controller.ResourceGatheringController.parseApi(com.social.chenl.vo.IncVO)
+2019-09-27 13:41:31.060 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/500]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error500()
+2019-09-27 13:41:31.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/400]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error400()
+2019-09-27 13:41:31.061 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/404]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RestErrorController.error404()
+2019-09-27 13:41:31.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rss/upload/user/image],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RssController.uploadHotelContract(org.springframework.web.multipart.MultipartFile[])
+2019-09-27 13:41:31.063 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/rss/upload/feed/image],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.RssController.uploadFeedbackImage(org.springframework.web.multipart.MultipartFile[])
+2019-09-27 13:41:31.064 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.register(com.social.chenl.vo.RegisterVO)
+2019-09-27 13:41:31.065 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.login(com.social.chenl.vo.LoginVO)
+2019-09-27 13:41:31.065 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/rc/list],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.listRcUser()
+2019-09-27 13:41:31.065 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/search],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.searchUser(com.social.chenl.vo.UserSearchVO)
+2019-09-27 13:41:31.065 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/update],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.updateUser(com.social.chenl.vo.UserUpdateVO,java.lang.String)
+2019-09-27 13:41:31.065 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/info],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.getUser(com.social.chenl.vo.IdVO,java.lang.String)
+2019-09-27 13:41:31.065 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/reset],methods=[POST]}" onto public com.social.chenl.result.Result com.social.chenl.controller.UserController.resetPassword(com.social.chenl.vo.RegisterVO)
+2019-09-27 13:41:31.066 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-09-27 13:41:31.068 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-09-27 13:41:31.069 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-09-27 13:41:31.070 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-09-27 13:41:31.072 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-09-27 13:41:31.072 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-09-27 13:41:31.240 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@77825085: startup date [Fri Sep 27 13:41:28 CST 2019]; root of context hierarchy
+2019-09-27 13:41:31.303 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/web/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 13:41:31.303 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/js/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 13:41:31.303 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 13:41:31.304 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 13:41:31.304 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 13:41:31.327 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+2019-09-27 13:41:31.352 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-09-27 13:41:31.375 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [web/index.html]
+2019-09-27 13:41:31.864 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-09-27 13:41:31.872 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-09-27 13:41:31.873 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2019-09-27 13:41:31.890 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-09-27 13:41:31.903 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2019-09-27 13:41:32.236 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2019-09-27 13:41:32.243 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8090]
+2019-09-27 13:41:32.255 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-09-27 13:41:32.267 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+2019-09-27 13:41:32.273 [main] INFO  com.social.chenl.Application - Started Application in 4.267 seconds (JVM running for 5.769)
+2019-09-27 14:38:01.248 [main] INFO  com.social.chenl.Application - Starting Application on DESKTOP-TQPPDCS with PID 21816 (D:\myProject\chenl-server-master\target\classes started by Lance in D:\myProject\chenl-server-master)
+2019-09-27 14:38:01.250 [main] INFO  com.social.chenl.Application - No active profile set, falling back to default profiles: default
+2019-09-27 14:38:01.285 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b0090a4: startup date [Fri Sep 27 14:38:01 CST 2019]; root of context hierarchy
+2019-09-27 14:38:01.409 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2019-09-27 14:38:02.288 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ddbcf248] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-27 14:38:02.467 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+2019-09-27 14:38:02.473 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+2019-09-27 14:38:02.474 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-09-27 14:38:02.533 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-09-27 14:38:02.533 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1248 ms
+2019-09-27 14:38:03.007 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-09-27 14:38:03.007 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-09-27 14:38:03.007 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-09-27 14:38:03.007 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-09-27 14:38:03.007 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'apiSecurityFilter' to urls: [/chenl/user/*, /chenl/feed/*, /chenl/rss/*, /chenl/future/*]
+2019-09-27 14:38:03.008 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/chenl/*]
+2019-09-27 14:38:03.126 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisUtil': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2019-09-27 14:38:03.128 [main] INFO  o.a.catalina.core.StandardService - Stopping service Tomcat
+2019-09-27 14:38:03.134 [localhost-startStop-1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2019-09-27 14:38:03.140 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-09-27 14:38:03.204 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
