@@ -1,8 +1,10 @@
 spring:
   datasource:
+    # 使用阿里的Druid连接池
+    type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost:3306/chenl-server?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
     username: root
-    password: 930224
+    password: 
     driver-class-name: com.mysql.jdbc.Driver
   jackson:
     time-zone: GMT+8

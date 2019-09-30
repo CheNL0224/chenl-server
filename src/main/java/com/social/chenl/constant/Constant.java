@@ -28,4 +28,7 @@ public class Constant {
 
     public static final String DEFAULT_USER_ID = "bef95afda1cf4d42a5e232b5be131f66";
 
+    //分页
+    public final static Integer PAGESIZE = 10;
+
 }

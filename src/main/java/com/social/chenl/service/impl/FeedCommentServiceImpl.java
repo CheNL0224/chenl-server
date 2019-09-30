@@ -1,5 +1,6 @@
 package com.social.chenl.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.social.chenl.constant.Constant;
 import com.social.chenl.dao.FeedCommentDao;
 import com.social.chenl.entity.TFeedComment;
@@ -53,6 +54,7 @@ public class FeedCommentServiceImpl implements FeedCommentService {
         // 设置分页
         ParamUtil.setPage(feedCommentVO);
 
+//        PageHelper.startPage(Integer.valueOf(paramMap.get("pageNum").toString()), Constant.PAGESIZE);
         Integer total = feedCommentDao.commentTotal();
         List<Comment> commentList = feedCommentDao.pageFeedComment(feedCommentVO);
 
