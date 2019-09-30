@@ -1,5 +1,6 @@
 package com.social.chenl.controller;
 
+import com.social.chenl.redis.RedisUtil;
 import com.social.chenl.result.Result;
 import com.social.chenl.service.AppVersionService;
 import io.swagger.annotations.Api;
@@ -27,10 +28,15 @@ public class AppVersionController {
     @Autowired
     private AppVersionService appVersionService;
 
+    @Autowired
+    protected RedisUtil redisService;
+
     @ApiOperation(value = "最新app版本", notes = "获取最新app版本接口")
     @RequestMapping(value = "/latest", method = RequestMethod.POST)
     @ResponseBody
     public Result latestVersion() {
+/*        redisService.set("1111","测试");
+        logger.info("输出redis="+redisService.get("1111"));*/
         return appVersionService.latestVersion();
     }
 
